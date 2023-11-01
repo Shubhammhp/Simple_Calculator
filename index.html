@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css"> <!-- Linking the CSS file -->
+</head>
+<body>
+    <div id="Calculator">
+        <input type="text" id="display-class"> <!-- Input field for displaying calculator input/output -->
+        <div id="input-Buttons">
+            <!-- Calculator buttons are organized in groups -->
+            <div>
+                <!-- Group 1: AC, DEL, %, / buttons -->
+                <button style="background-color: rgb(7, 231, 7); font-weight: 800; color: black;" >AC</button> <!-- Clear all (All Clear) button -->
+                <button style="background-color:#FF0000; font-weight: 800; color: black;" >DEL</button> <!-- Delete (Backspace) button -->
+                <button class="operators">%</button> <!-- Percentage button -->
+                <button class="operators">/</button> <!-- Division button -->
+            </div>
+            <div>
+                <!-- Group 2: 7, 8, 9, * buttons -->
+                <button>7</button> <!-- Digit 7 button -->
+                <button>8</button> <!-- Digit 8 button -->
+                <button>9</button> <!-- Digit 9 button -->
+                <button class="operators">*</button> <!-- Multiplication button -->
+            </div>
+            <div>
+                <!-- Group 3: 4, 5, 6, - buttons -->
+                <button>4</button> <!-- Digit 4 button -->
+                <button>5</button> <!-- Digit 5 button -->
+                <button>6</button> <!-- Digit 6 button -->
+                <button class="operators">-</button> <!-- Subtraction button -->
+            </div>
+            <div>
+                <!-- Group 4: 1, 2, 3, + buttons -->
+                <button>1</button> <!-- Digit 1 button -->
+                <button>2</button> <!-- Digit 2 button -->
+                <button>3</button> <!-- Digit 3 button -->
+                <button class="operators">+</button> <!-- Addition button -->
+            </div>
+            <div>
+                <!-- Group 5: 00, 0, ., = buttons -->
+                <button>00</button> <!-- Double zero button -->
+                <button>0</button> <!-- Digit 0 button -->
+                <button>.</button> <!-- Decimal point button -->
+                <button class="operators">=</button> <!-- Equal to button -->
+            </div>
+        </div>
+    </div>
+    <script src="cal.js"></script> <!-- Linking the JavaScript file -->
+</body>
+</html>

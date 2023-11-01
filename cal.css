@@ -1,0 +1,128 @@
+/* Apply box-sizing to all elements */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Set body to full viewport width and height */
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Apply a gradient background */
+    background:linear-gradient(145deg, rgb(0, 0, 0),rgba(0, 199, 206, 0.596));    
+}
+
+/* Styles for the calculator container */
+#Calculator{
+    width: 450px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 3px 15px rgb(191, 203, 226);
+}
+
+/* Styles for the calculator display */
+#display-class{
+    width: 100%;
+    height: 12%;
+    background: transparent;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    box-shadow: 0px 2px 10px rgba(0, 199, 206, 0.596);
+    font-size: 60px;
+    text-align: right;
+    padding: 10px;
+    align-items: center;
+    color: white;
+    padding: 10px; /* Duplicate property, remove one */
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+/* Placeholder color for display-class */
+#display-class::placeholder{
+    color: #ffffff;
+}
+
+/* Styles for the calculator buttons */
+button{
+    height: 70px;
+    width: 70px;
+    border: 1px solid rgb(18, 149, 167);
+    padding: 5px;
+    border-radius: 50%;
+    margin: 3%;
+    margin-left: 4%;
+    margin-top: 2%;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    box-shadow: 1px 2px 6px 5px rgb(255, 255, 255,0.5);
+    font-weight: 900;
+    background: transparent;
+    color: #fff;
+    text-align: center;
+}
+
+/* Styles for operator buttons */
+.operators{
+    background-color: #fb7c14;
+    color: black;
+    font-weight: 800;
+}
+
+/* Styles for the container of input buttons */
+#input-Buttons{
+    height: 100%;
+    width: 100%;
+    margin-top: 5%;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    #Calculator{
+        width: 300px;
+        height: 370px;
+    }
+
+    button{
+        height: 40px;
+        width: 40px;
+        border: 1px solid rgb(18, 149, 167);
+        padding: 5px;
+        border-radius: 50%;
+        margin: 3%;
+        margin-left: 5%;
+        margin-top: 2%;
+        cursor: pointer;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px;
+        box-shadow: 1px 2px 6px 5px rgb(255, 255, 255,0.5);
+        font-weight: 400;
+        background: transparent;
+        color: #fff;
+        text-align: center;
+    }
+
+    #display-class{
+        width: 100%;
+        height: 12%;
+        background: transparent;
+        margin-bottom: 1%;
+        margin-top: 1%;
+        box-shadow: 0px 2px 10px rgba(0, 199, 206, 0.996);
+        font-size: 30px;
+        text-align: right;
+        padding: 10px;
+        align-items: center;
+        color: white;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 500;
+        border-radius: 10px;
+    }
+}
